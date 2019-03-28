@@ -1,0 +1,30 @@
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: inline-block;
+    width: 140px;
+}
+
+.form-inputs {
+    width: 250px;
+    height:30px;
+}
+
+.address-label {
+    vertical-align: middle;
+    margin-top: -20px; /* Use negative value to pull address label up */
+}
+
+.form-submit {
+    margin-top: 40px;
+}
+
+.form-button {
+  background-color: lightcoral;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+}
