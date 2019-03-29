@@ -63,6 +63,32 @@ nav ul li a {
     overflow: scroll;
 }
 
+.main-div {
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.account-summary img {
+    width: 500px;
+}
+
+.news-div {
+    width: 46%;
+    display: inline-block;
+    vertical-align: top;
+    background-color: white;
+    padding: 10px;
+    height: 520px;;
+}
+
+.news-div ul li{
+    margin-bottom: 10px;
+    border-bottom: 1px solid lightcoral;
+    padding-bottom: 5px;
+    font-style: italic;
+}
+
 /* Clear floats after the columns */
 section:after {
     content: "";
