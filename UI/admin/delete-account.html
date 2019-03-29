@@ -15,19 +15,21 @@
     <section>
     <nav>
         <ul>
-            <li><a href="#">User Management</a></li>
-            <li><a href="#">Transactions</a></li>
+            <li><a href="list-users.html">User Management</a></li>
+            <li><a href="list-accounts.html">Account Management</a></li>
+            <li><a href="credit-account.html">Credit Account</a></li>
+            <li><a href="debit-account.html">Debit Account</a></li>
             <li><a href="#">Logout</a></li>
         </ul>
     </nav>
     
     <div class='main-content'>
-        <h1>Credit User</h1>
+        <h1>Delete Account</h1>
         
         <!-- Create User Form with upload capability -->
         <form method="POST" enctype="multipart/form-data">
             <div class='form-group'>
-                <label>User Type*</label>
+                <label>Account Type*</label>
                 <select name="user-type" class="form-inputs" required>
                     <option value="">Choose Account Type</option>
                     <option value="savings">Savings</option>
@@ -45,14 +47,14 @@
                 <input type="text" name="accountnumber" class="form-inputs" required />
             </div>
 
-            <div class='form-group'>
-                <label>Amount*</label>
-                <input type="number" name="amount" class="form-inputs" required />
-            </div>
-
             <div class='form-group form-submit'>
                 <label></label>
-                <input type="submit" name="submit" value="Credit User" class="form-inputs form-button" />
+                <input type="submit" name="submit" value="Confirm Delete" class="form-inputs form-button" />
+            </div>
+
+            <div class='form-group'>
+                <label></label>
+                <a href="list-accounts.html" class="cancel-button">Cancel</a>
             </div>
         </form>
     </div>

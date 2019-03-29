@@ -1,4 +1,12 @@
 /* Start User List Styles */
+.search-form {
+    margin-bottom: 20px;
+}
+
+.search-input {
+    width: 300px;
+}
+
 table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
@@ -30,13 +38,25 @@ tr:nth-child(even) {
     height:30px;
 }
 
-.address-label {
+.special-label {
     vertical-align: middle;
-    margin-top: -20px; /* Use negative value to pull address label up */
+    margin-top: -20px; /* Use negative value to pull label up */
 }
 
 .form-submit {
     margin-top: 40px;
+}
+
+.cancel-button {
+    background-color: silver;
+    text-decoration: none;
+    height: 30px;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 6px;
+    display: inline-block;
+    width: 250px;
+    color: black;
 }
 
 .form-button {

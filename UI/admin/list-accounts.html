@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="../css/index.css" rel="stylesheet" />
+    <link href="css/admin.css" rel="stylesheet" />
+    <title>Banka: Internet Banking Portal</title>
+</head>
+
+<body>
+    <header>
+        <h2 class="logo">Banka</h2>
+        <span>Admin Portal</span>
+    </header>
+
+    <section>
+    <nav>
+        <ul>
+            <li><a href="list-users.html">User Management</a></li>
+            <li><a href="list-accounts.html">Account Management</a></li>
+            <li><a href="credit-account.html">Credit Account</a></li>
+            <li><a href="debit-account.html">Debit Account</a></li>
+            <li><a href="#">Logout</a></li>
+        </ul>
+    </nav>
+    
+    <div class='main-content'>
+        <h1>Account Management</h1>
+
+        <form action="#" method="POST" class="search-form">
+            <input type="search" class="search-input" name="search-account" placeholder="Search Accounts" />
+            <input type="submit" class="search-button" name="submit" value="Search" />
+        </form>
+        
+        <table>
+            <tr>
+              <th>Account Name</th>
+              <th>Account Number</th>
+              <th>Account Type</th>
+              <th>BVN</th>
+              <th>Phone</th>
+              <th>Actions</th>
+            </tr>
+            <tr>
+              <td>Muhammadu Ali</td>
+              <td>muhammadu4u@yahoo.com</td>
+              <td>Current</td>
+              <td>2312343938176544</td>
+              <td>08034734637</td>
+              <td>
+                  <a href="view-account.html">View</a>
+                  <a href="credit-user.html" class="credit-link">Credit</a>
+                  <a href="debit-user.html" class="credit-link">Debit</a>
+                  <a href="delete-account.html" class="credit-link">Delete</a>
+              </td>
+            </tr>
+            <tr>
+              <td>Festus Moses</td>
+              <td>festus27@banka.com</td>
+              <td>Savings</td>
+              <td>2312374938123123</td>
+              <td>09025876790</td>
+              <td>
+                  <a href="view-account.html">View</a>
+                  <a href="credit-user.html" class="credit-link">Credit</a>
+                  <a href="debit-user.html" class="credit-link">Debit</a>
+                  <a href="delete-account.html" class="credit-link">Delete</a>
+                </td>
+              </tr>
+            <tr>
+              <td>Ernest Obi</td>
+              <td>ErnestObi@banka.com</td>
+              <td>Current</td>
+              <td>2312374938123123</td>
+              <td>07056478392</td>
+              <td>
+                  <a href="view-account.html">View</a>
+                  <a href="credit-account.html" class="credit-link">Credit</a>
+                  <a href="debit-account.html" class="credit-link">Debit</a>
+                  <a href="delete-account.html" class="credit-link">Delete</a>
+              </td>
+            </tr>
+            <tr>
+              <td>Bukky Wright</td>
+              <td>BukkyW@banka.com</td>
+              <td>Current</td>
+              <td>2312374938123123</td>
+              <td>07124565434</td>
+              <td>
+                  <a href="view-account.html">View</a>
+                  <a href="credit-user.html" class="credit-link">Credit</a>
+                  <a href="debit-user.html" class="credit-link">Debit</a>
+                  <a href="delete-account.html" class="credit-link">Delete</a>
+              </td>
+            </tr>
+            <tr>
+              <td>Adebola Okusanya</td>
+              <td>Okubola50@banka.com</td>
+              <td>Current</td>
+              <td>2312374938123123</td>
+              <td>09078654554</td>
+              <td>
+                  <a href="view-account.html">View</a>
+                  <a href="credit-user.html" class="credit-link">Credit</a>
+                  <a href="debit-user.html" class="credit-link">Debit</a>
+                  <a href="delete-account.html" class="credit-link">Delete</a>
+              </td>
+            </tr>
+            <tr>
+              <td>Magarett Edet</td>
+              <td>MagEdet@banka.com</td>
+              <td>Savings</td>
+              <td>2312374938123123</td>
+              <td>08175653455</td>
+              <td>
+                  <a href="view-account.html">View</a>
+                  <a href="credit-user.html" class="credit-link">Credit</a>
+                  <a href="debit-user.html" class="credit-link">Debit</a>
+                  <a href="delete-account.html" class="credit-link">Delete</a>
+              </td>
+            </tr>
+          </table>
+    </div>
+    </section>
+
+    <footer>
+    <p>&copy; 2019 BANKA | Copyright Reserved</p>
+    </footer>
+</body>
+
+<script src="js/admin.js" type="text/javascript"></script>
+</html>
