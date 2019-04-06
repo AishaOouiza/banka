@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="../css/index.css" rel="stylesheet" />
+    <link href="css/admin.css" rel="stylesheet" />
+    <title>Banka: Internet Banking Portal</title>
+</head>
+
+<body>
+    <header>
+        <h2 class="logo">Banka</h2>
+        <span>Admin Portal</span>
+    </header>
+
+    <section>
+    <nav>
+        <ul>
+            <li><a href="list-users.html">User Management</a></li>
+            <li><a href="list-accounts.html">Account Management</a></li>
+            <li><a href="credit-account.html">Credit Account</a></li>
+            <li><a href="debit-account.html">Debit Account</a></li>
+            <li><a href="index.html">Logout</a></li>
+        </ul>
+    </nav>
+    
+    <div class='main-content'>
+        <h1>View Account</h1>
+        
+        <form method="POST">
+            <div class='form-group'>
+                <label>Account Type*</label>
+                <select name="user-type" disabled class="form-inputs" required>
+                    <option value="">Choose Account Type</option>
+                    <option value="savings" selected>Savings</option>
+                    <option value="current">Current</option>
+                </select>
+            </div>
+
+            <div class='form-group'>
+                <label>Account Name*</label>
+                <input type="text" name="accountname" disabled placeholder="Account Name" class="form-inputs" required />
+            </div>
+
+            <div class='form-group'>
+                <label>Account Number*</label>
+                <input type="text" name="accountnumber" disabled placeholder="Account Number" class="form-inputs" required />
+            </div>
+
+            <div class='form-group'>
+                <label>Email Address*</label>
+                <input type="email" name="email" disabled placeholder="Email Address" class="form-inputs" required />
+            </div>
+
+            <div class='form-group'>
+                <label>Phone Number</label>
+                <input type="text" name="phone" disabled placeholder="Phone Number" class="form-inputs" />
+            </div>
+
+            <div class='form-group'>
+                <label class='special-label'>Address</label>
+                <textarea rows="3" name="address" disabled placeholder="Residential Address" class="form-inputs"></textarea>
+            </div>
+
+            <div class='form-group'>
+                <label class="special-label">Mobile Banking</label>
+                <input type="checkbox" disabled name="mobile-banking" class="form-inputs" />
+            </div>
+
+            <div class='form-group'>
+                <label class="special-label">Internet Banking</label>
+                <input type="checkbox" checked disabled name="internet-banking" class="form-inputs" />
+            </div>
+            
+            <div class='form-group form-submit'>
+                <label></label>
+                <input type="submit" name="submit" value="Edit Account" class="form-inputs form-button" />
+            </div>
+        </form>
+    </div>
+    </section>
+
+    <footer>
+    <p>&copy; 2019 BANKA | Copyright Reserved</p>
+    </footer>
+</body>
+
+</html>
