@@ -1,0 +1,38 @@
+{
+  "name": "banka",
+  "version": "1.0.0",
+  "description": "An Online Bank Application",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-react": "^7.12.4",
+    "jasmine": "^3.4.0"
+  },
+  "scripts": {
+    "test": "jasmine"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AishaOouiza/banka.git"
+  },
+  "keywords": [
+    "banka",
+    "bank",
+    "fintech",
+    "andela",
+    "bootcamp"
+  ],
+  "author": "Aisha Musa",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AishaOouiza/banka/issues"
+  },
+  "homepage": "https://github.com/AishaOouiza/banka#readme"
+}
