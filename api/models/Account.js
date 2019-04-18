@@ -3,7 +3,11 @@ import uuid from 'uuid';
 
 class Account {
   /**
+<<<<<<< HEAD
    * class constructor for Account
+=======
+   * class constructor
+>>>>>>> dd4af187ea4ea024bde0d9adef72620b01cb0a00
    * @param {object} data
    */
   constructor() {
