@@ -21,7 +21,8 @@
     "eslint-plugin-import": "^2.16.0",
     "eslint-plugin-jsx-a11y": "^6.2.1",
     "eslint-plugin-react": "^7.12.4",
-    "jasmine": "^3.4.0"
+    "jasmine": "^3.4.0",
+    "nodemon": "^1.18.11"
   },
   "scripts": {
     "test": "jasmine",

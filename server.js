@@ -4,6 +4,11 @@ import bodyParser from 'body-parser';
 import User from './api/controllers/User';
 
 const app = express();
+
+app.post('/quotes', (req, res) => {
+  console.log('Hellooooooooooooooooo!')
+});
+
 app.use(bodyParser.json()); // support json encoded bodies
 app.use(bodyParser.urlencoded({ extended: true })); // support encoded bodies
 
