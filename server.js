@@ -17,8 +17,8 @@ app.get('/api/v1/user', (req, res) => {
   return res.status(200).send({ message: 'User API!' });
 });
 
-app.post('/api/v1/user/create', (req, res) => {
-  return res.status(200).send(User.create(req.body));
+app.post('/api/v1/user/signup', (req, res) => {
+  return res.status(200).send(User.signUp(req.body));
 });
 
 app.get('/api/v1/user/findAll', (req, res) => {
