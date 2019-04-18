@@ -2,13 +2,10 @@
 import express from 'express';
 import bodyParser from 'body-parser';
 import User from './api/controllers/User';
+import Account from './api/controllers/Account';
+import Transaction from './api/controllers/Transaction';
 
 const app = express();
-
-app.post('/quotes', (req, res) => {
-  console.log('Hellooooooooooooooooo!')
-});
-
 app.use(bodyParser.json()); // support json encoded bodies
 app.use(bodyParser.urlencoded({ extended: true })); // support encoded bodies
 
@@ -40,6 +37,54 @@ app.put('/api/v1/user/:id', (req, res) => {
 
 app.delete('/api/v1/user/:id', (req, res) => {
   return res.status(200).send(User.delete(req.params.id));
+});
+
+app.get('/api/v1/account', (req, res) => {
+  return res.status(200).send({ message: 'Account API!' });
+});
+
+app.post('/api/v1/account/create', (req, res) => {
+  return res.status(200).send(Account.create(req.body));
+});
+
+app.get('/api/v1/account/findAll', (req, res) => {
+  return res.status(200).send(Account.findAll());
+});
+
+app.get('/api/v1/account/:id', (req, res) => {
+  return res.status(200).send(Account.getOne(req.params.id));
+});
+
+app.put('/api/v1/account/:id', (req, res) => {
+  return res.status(200).send(Account.update(req.params.id));
+});
+
+app.delete('/api/v1/account/:id', (req, res) => {
+  return res.status(200).send(Account.delete(req.params.id));
+});
+
+app.get('/api/v1/transaction', (req, res) => {
+  return res.status(200).send({ message: 'Transaction API!' });
+});
+
+app.post('/api/v1/transaction/create', (req, res) => {
+  return res.status(200).send(Transaction.create(req.body));
+});
+
+app.get('/api/v1/transaction/findAll', (req, res) => {
+  return res.status(200).send(Transaction.findAll());
+});
+
+app.get('/api/v1/transaction/:id', (req, res) => {
+  return res.status(200).send(Transaction.getOne(req.params.id));
+});
+
+app.put('/api/v1/transaction/:id', (req, res) => {
+  return res.status(200).send(Transaction.update(req.params.id));
+});
+
+app.delete('/api/v1/transaction/:id', (req, res) => {
+  return res.status(200).send(Transaction.delete(req.params.id));
 });
 
 
