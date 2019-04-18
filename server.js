@@ -1,8 +1,11 @@
 // server.js
 import express from 'express';
-import User from './api/models/User';
+import bodyParser from 'body-parser';
+import User from './api/controllers/User';
 
 const app = express();
+app.use(bodyParser.json()); // support json encoded bodies
+app.use(bodyParser.urlencoded({ extended: true })); // support encoded bodies
 
 app.use(express.json());
 
@@ -15,7 +18,7 @@ app.get('/api/v1/user', (req, res) => {
 });
 
 app.post('/api/v1/user/create', (req, res) => {
-  return res.status(200).send(User.create());
+  return res.status(200).send(User.create(req.body));
 });
 
 app.get('/api/v1/user/findAll', (req, res) => {
